@@ -11,7 +11,9 @@ The Makefiles expect g++ (>=4.7) to exist, but if clang++ is preferred, it is
 supported:  (http://clang.llvm.org/get_started.html)
 
 # pushd path/to/jsnSock
-# export CLANG_PATH=/path/to/clang++; make
+
+# export CLANG_PATH=/path/to/clang++
+# make
 # sudo make install
 
 # pushd examples
