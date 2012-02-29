@@ -18,3 +18,16 @@ supported:  (http://clang.llvm.org/get_started.html)
 
 # pushd examples
 # make
+
+
+Backstory:
+
+This project is a teaching tool in-the-making.
+C++11 syntax is signficantly different to that of C++03 -- enough
+to merit a "from scratch" approach to teaching as opposed to a
+"here are the differences" approach: http://http://en.wikipedia.org/wiki/C%2B%2B11
+
+This source also serves as an introduction to basic TCP sockets on UNIX platforms.
+Updates to this project will come in the form of project 'forks' so as to preserve
+the learning path.  The next update will add UDP support and address issues where
+the kernel "decides" to not completely send a data stream (resulting in packet fragmentation).
