@@ -104,10 +104,6 @@ namespace jsnSock
 
 	    ~JSNSockBase();
 	    
-	    /* disallow copying the base class */
-//	    JSNSockBase(const JSNSockBase &) = delete;
-//	    JSNSockBase & operator=(const JSNSockBase &) = delete;
-
 	    /** JSNSockBase Function Declarations **/
 	    auto close () 						-> void;
 
@@ -159,10 +155,6 @@ namespace jsnSock
 	public:
 	    JSNSockTCP();
 	    
-	    /* Copy & Assignment contstructors */
-//	    JSNSockTCP(const JSNSockTCP &) = delete;
-//	    JSNSockTCP & operator=(const JSNSockTCP &) = delete;
-
 	    JSNSockTCP(int sockDesc, double timeout = 0.0);
 	    JSNSockTCP(const std::string &host, uint16_t port, double timeout = 0.0);
 
@@ -183,10 +175,6 @@ namespace jsnSock
 	    /* TCP Send Overloaded Operators */
 	    template<class T>
 		auto operator<< (const T &buffer)			-> void;
-//	    auto operator<< (const char	&buffer) 			-> void;
-//	    auto operator<< (const int	&buffer) 			-> void;
-//	    auto operator<< (const float &buffer)		 	-> void;
-//	    auto operator<< (const double &buffer) 			-> void;
 	    auto operator<< (const std::string &buffer) 		-> void;
 
 	    /* TCP Receiver Overloaded Operator */
@@ -203,18 +191,8 @@ namespace jsnSock
     {
 	private:
 	    uint32_t		connection_max;
-//	    struct sigaction	sig_action;
-
-//	    auto signals_handler(int signal)				-> void;
-//	    sig_action.sa_handler = signals_handler;
 	public:
 
-//	    JSNSockTCPServer() = default;
-
-	    /* Disallow copying or assignment */
-//	    JSNSockTCPServer(const JSNSockTCPServer &) = delete;
-//	    JSNSockTCPServer & operator=(const JSNSockTCPServer &) = delete;
-	    
 	    auto bind (
 		    	uint16_t port,
 			const std::string &address = "",
