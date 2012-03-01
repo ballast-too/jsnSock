@@ -44,10 +44,7 @@ int main(int argc, const char *argv[])  {
     while(1)  {
 	    try  {
 		    bool result = ss.accept(callback_func);
-/*		    JSNSockTCP peer = ss.accept();
-		    foo(peer);
-*/	    }
-
+	    }
 	    catch (JSNException e)  {
 		    cerr << "Exception Occurred while accepting/handling a connection: " << e.what() << endl;
 	    }
