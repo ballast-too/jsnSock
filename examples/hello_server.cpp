@@ -8,6 +8,7 @@
  * (C) 2012 Jason Browning
  */
 
+#include <inttypes.h>	/* strtoimax() */
 #include <iostream>
 #include <JSNSock.hpp>
 
@@ -33,7 +34,7 @@ int main(int argc, const char *argv[])  {
     JSNSockTCPServer ss;
 
     try {
-	ss.bind(atoi(argv[1]));
+	ss.bind(strtoimax(argv[1], nullptr, 0));
 	ss.listen();
     }
     catch (JSNException e) {
