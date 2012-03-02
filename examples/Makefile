@@ -10,9 +10,9 @@ else  # assume g++
 endif
 
 all:
-	$(CPP_DRIVER) $(LINKER_ARGS) -o hello_client hello_client.cpp
-	$(CPP_DRIVER) $(LINKER_ARGS) -o hello_server hello_server.cpp
+	$(CPP_DRIVER) $(LINKER_ARGS) -o tcp_client tcp_client.cpp
+	$(CPP_DRIVER) $(LINKER_ARGS) -o tcp_server tcp_server.cpp
 
 clean:
-	rm hello_client
-	rm hello_server
+	rm tcp_client
+	rm tcp_server
