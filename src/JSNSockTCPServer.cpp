@@ -30,25 +30,6 @@
 using namespace jsnSock;
 
 /* Implementation */
-/*
-JSNSockTCPServer::JSNSockTCPServer()
-{
-    / * Setup the sig_action struct * /
-    sigemptyset(&sig_action.sa_mask);
-    sig_action.sa_flags = 0;
-    sigaction(SIGINT, &sig_action, nullptr);
-    sigaction(SIGTERM, &sig_action, nullptr);
-    sigaction(SIGHUP, &sig_action, nullptr);
-    sigaction(SIGQUIT, &sig_action, nullptr);
-}
-
-auto JSNSockTCPServer::signals_handler(
-	int			signal
-	)			-> void
-{
-}
-*/
-
 auto JSNSockTCPServer::bind(
 	uint16_t		port,
 	const std::string	&address,

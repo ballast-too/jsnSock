@@ -61,22 +61,6 @@ JSNSockTCP::JSNSockTCP(	/* Constructor 2/2 */
     connect(host, port);
 }
 
-/*
-JSNSockTCP::JSNSockTCP(
-	const JSNSockTCP	&sockObj
-	)
-{
-    / * Create a new socket descriptor with the same address and port. * /
-}
-
-auto JSNSockTCP::operator=(
-	const JSNSockTCP	&sockObj	
-	)			-> JSNSockTCP&	
-{
-    / * Call the copy constructor * /
-}
-*/
-
 auto JSNSockTCP::select(
 	)		-> void
 {
