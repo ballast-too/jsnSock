@@ -48,5 +48,5 @@ uninstall:
 	rm $(PREFIX)/lib/$(lib_name_short)
 	rm $(PREFIX)/lib/$(lib_name_long)
 	rm $(PREFIX)/lib/lib$(LIB).a
-#	rm $(PREFIX)/$(INCLUDEDIR)/usock.hpp
-#	rm $(PREFIX)/$(INCLUDEDIR)/usock_exception.hpp
+	rm $(PREFIX)/$(INCLUDEDIR)/usock.hpp
+	rm $(PREFIX)/$(INCLUDEDIR)/usock_exception.hpp
